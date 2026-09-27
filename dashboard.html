@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UsabilityPulse Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>UsabilityPulse Dashboard</h1>
+
+    <p>Website usability analytics</p>
+
+    <p id="sessionId">Session ID: Not Available</p>
+
+    <button id="clearDataButton">Clear All Data</button>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>Total Clicks</h2>
+            <p id="clickCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Hovers</h2>
+            <p id="hoverCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Scrolls</h2>
+            <p id="scrollCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Inputs</h2>
+            <p id="inputCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Errors</h2>
+            <p id="errorCount">0</p>
+        </div>
+
+        <div class="card">
+            <h2>Page Time</h2>
+            <p id="pageTime">0 seconds</p>
+        </div>
+
+    </div>
+    <h2>Usability Insights</h2>
+
+    <p id="mostClicked">Most Clicked: No data</p>
+    <p id="mostHovered">Most Hovered: No data</p>
+    <p id="mostInteracted">Most Interacted: No data</p>
+    <p id="errorRate">Error Rate: No data</p>
+    <p id="mostErrorProne">Most Error-Prone: No data</p>
+
+    <h2>Event Activity Chart</h2>
+
+    <div id="eventChart">
+
+        <div class="bar">
+          <span>Clicks</span>
+          <div id="clickBar" class="barFill"></div>
+        </div>
+
+        <div class="bar">
+            <span>Hovers</span>
+            <div id="hoverBar" class="barFill"></div>
+        </div>
+
+        <div class="bar">
+            <span>Scrolls</span>
+            <div id="scrollBar" class="barFill"></div>
+        </div>
+
+        <div class="bar">
+            <span>Inputs</span>
+            <div id="inputBar" class="barFill"></div>
+        </div>
+
+        <div class="bar">
+            <span>Errors</span>
+            <div id="errorBar" class="barFill"></div>
+        </div>
+
+    </div>
+
+    <div id="heatmapContainer">
+        <div id="heatmapArea"></div>
+    </div>
+
+    <p>
+       Heatmap shows the areas where users clicked on the webpage.
+    </p>
+
+    <h2>Event Summary</h2>
+
+    <table id="summaryTable">
+
+        <thead>
+           <tr>
+             <th>Event Type</th>
+             <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+               <td>Clicks</td>
+               <td id="summaryClicks">0</td>
+            </tr>
+
+            <tr>
+               <td>Hovers</td>
+               <td id="summaryHovers">0</td>
+            </tr>
+
+            <tr>
+              <td>Scrolls</td>
+               <td id="summaryScrolls">0</td>
+            </tr>
+
+            <tr>
+               <td>Inputs</td>
+               <td id="summaryInputs">0</td>
+            </tr>
+
+            <tr>
+               <td>Errors</td>
+               <td id="summaryErrors">0</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <h2>Recent Events</h2>
+
+    <table id="eventsTable">
+
+        <thead>
+            <tr>
+               <th>Event Type</th>
+               <th>Element</th>
+               <th>Element ID</th>
+               <th>Timestamp</th>
+            </tr>
+        </thead>
+
+        <tbody id="eventsBody">
+        </tbody>
+
+    </table>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

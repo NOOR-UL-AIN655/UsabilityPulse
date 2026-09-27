@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UsabilityPulse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>UsabilityPulse</h1>
+
+    <p>This page is being monitored for usability testing.</p>
+
+    <button id="testButton">Test Button</button>
+    <nav>
+        <a href="#userInfo">User Information</a>
+        <a href="#testingArea">Testing Area</a>
+        <a href="#endPage">End of Page</a>
+    </nav>
+
+    <h2> User Preferences</h2>
+
+    <label for="categorySelect">Select a category:</label>
+
+    <select id="categorySelect">
+        <option value="">Choose a category</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+    </select>
+
+    <br><br>
+
+    <label>
+       <input type="checkbox" id="agreementCheckbox">
+    I        agree to usability testing
+    </label>
+
+    <br><br>
+
+    <h2 id="userInfo">User Information</h2>
+
+    <form id="userForm">
+
+        <input 
+           type="text" 
+           id="nameInput" 
+           placeholder="Enter your name"
+           required
+        >
+
+        <button id="submitButton" type="submit">Submit</button>
+
+    </form>
+
+    <div class="content">
+
+        <h2 id="testingArea">Usability Testing Area</h2>
+
+        <p>
+           This is sample content for testing the UsabilityPulse tracker.
+        </p>
+
+        <p>
+            Scroll down the page to test scroll tracking.
+        </p>
+
+        <p>
+           UsabilityPulse records user interactions for usability analysis.
+        </p>
+
+        <p>
+            This section provides additional content so that the user
+            can scroll through the webpage.
+        </p>
+
+        <h2>More Content</h2>
+
+        <p>
+           Continue scrolling to test how much of the page the user visits.
+        </p>
+
+        <p>
+           This is another testing section.
+        </p>
+
+        <p>
+           Keep scrolling until you reach the bottom of the page.
+        </p>
+
+        <h2>Testing Section 3</h2>
+
+        <p>
+            This is additional content for usability testing.
+            Users can scroll through this page to interact with different sections.
+        </p>
+
+        <p>
+           UsabilityPulse measures how users interact with this webpage.
+        </p>
+
+        <p>
+           This section is only used to create enough page content for scroll testing.
+        </p>
+
+        <h2>Testing Section 4</h2>
+
+        <p>
+           Continue scrolling to explore more content.
+        </p>
+
+        <p>
+           The tracker records scrolling activity and other user interactions.
+        </p>
+
+        <p>
+           This helps us understand how users navigate through a webpage.
+        </p>
+
+        <h2>Testing Section 5</h2>
+
+        <p>
+           You have reached another section of the testing page.
+        </p>
+
+        <p>
+            Keep scrolling to test the UsabilityPulse scroll tracker.
+        </p>
+
+        <p>
+           More sample content is provided here for testing purposes.
+        </p>
+
+        <h2 id="endPage">End of Page</h2>
+
+        <p>
+           You have reached the bottom of the UsabilityPulse testing page.
+        </p>
+
+    </div>
+
+    <script src="tracker.js"></script>
+
+</body>
+</html>
